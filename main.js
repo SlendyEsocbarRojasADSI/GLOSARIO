@@ -1,9 +1,8 @@
-let text = "";
-const fruits = ["Manzana", "Naranja", "Banano"];
-fruits.forEach(myFunction);
+let arr = [3, 4, 5, 6];
 
-document.getElementById("demo").innerHTML = text;
- 
-function myFunction(item, index) {
-  text += index + ": " + item + "<br>"; 
-}
+let modifiedArr = arr.map(function(element){
+    return element *3;
+});
+
+document.getElementById("modifiedArr").innerHTML= modifiedArr; 
+// [9, 12, 15, 18]

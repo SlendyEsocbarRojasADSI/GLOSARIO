@@ -20,5 +20,20 @@ function myFunction(item, index) {
 
 ------
 
-## 
+# Map
+
+Ahora imagina que tienes que multiplicar cada uno de los elementos del arreglo por 3. 
+
+```js
+let arr = [3, 4, 5, 6];
+
+let modifiedArr = arr.map(function(element){
+    return element *3;
+});
+
+document.getElementById("modifiedArr").innerHTML= modifiedArr; 
+// [9, 12, 15, 18]
+```
+
+------
 
