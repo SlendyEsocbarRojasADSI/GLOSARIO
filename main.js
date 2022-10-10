@@ -1,8 +1,7 @@
-let arr = [3, 4, 5, 6];
+const ages = [32, 33, 16, 40];
 
-let modifiedArr = arr.map(function(element){
-    return element *3;
-});
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
 
-document.getElementById("modifiedArr").innerHTML= modifiedArr; 
-// [9, 12, 15, 18]
+function checkAdult(age) {
+  return age >= 18;
+}

@@ -1,4 +1,4 @@
-# FOR EACH
+# For each
 
 Los bucles ***for y for-each*** en Java son dos maneras de realizar bucles, su nombre es similar, su estructura diferente.
 
@@ -33,6 +33,22 @@ let modifiedArr = arr.map(function(element){
 
 document.getElementById("modifiedArr").innerHTML= modifiedArr; 
 // [9, 12, 15, 18]
+```
+
+------
+
+# Filter
+
+**filter**() El método **filter**() crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+
+```js
+const ages = [32, 33, 16, 40];
+
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
 ```
 
 ------
