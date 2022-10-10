@@ -1,7 +1,17 @@
-const ages = [32, 33, 16, 40];
-
-document.getElementById("demo").innerHTML = ages.filter(checkAdult);
-
-function checkAdult(age) {
-  return age >= 18;
+for(let value of ["a", "b", "c"]){
+    document.getElementById("value").innerHTML= value;
 }
+// "a"
+// "b"
+// "c"
+
+[..."abc"]; // ["a", "b", "c"]
+
+function* gen(){
+  yield* ["a", "b", "c"];
+}
+
+gen().next(); // { value:"a", done:false }
+
+[a, b, c] = new Set(["a", "b", "c"]);
+a // "a"
