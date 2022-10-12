@@ -1,17 +1,14 @@
-for(let value of ["a", "b", "c"]){
-    document.getElementById("value").innerHTML= value;
+var i = 1;
+var txt = "";
+while (i < 5) {
+    txt += "El número es: " + i + "\n";
+    i++;
 }
-// "a"
-// "b"
-// "c"
+document.getElementById("txt").innerHTML= txt;
 
-[..."abc"]; // ["a", "b", "c"]
-
-function* gen(){
-  yield* ["a", "b", "c"];
-}
-
-gen().next(); // { value:"a", done:false }
-
-[a, b, c] = new Set(["a", "b", "c"]);
-a // "a"
+/*Imprime
+El número es: 1
+El número es: 2
+El número es: 3
+El número es: 4
+*/

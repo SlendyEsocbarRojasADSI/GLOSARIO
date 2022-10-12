@@ -79,3 +79,19 @@ a // "a"
 
 ------
 
+# Ciclos
+
+ciclo que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia.
+
+```js
+var i = 1;
+var txt = "";
+while (i < 5) {
+    txt += "El número es: " + i + "\n";
+    i++;
+}
+document.getElementById("txt").innerHTML= txt;
+```
+
+------
+
